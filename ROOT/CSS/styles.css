@@ -1,0 +1,465 @@
+/* global */
+body 
+{
+    background-image: url("../Assets/Images/Background.jpg");
+    text-align: center;
+	font-family: 'Spectral SC', serif;
+	margin: 0;
+}
+#topBar
+{
+	padding: 5px;
+	padding-left: 20px;
+	background-color: #F9690E;
+	color: white;
+	text-align: left;
+	letter-spacing: 15px;
+}
+#socialMedia
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline-block;
+}
+.socialLinks
+{
+	display: inline;
+}
+.socialBtn
+{
+	color: white;
+	text-decoration: none;
+}
+#demobtn 
+{
+    background-color: white;
+    border: none;
+    padding: 5px;
+	border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+#demobtn a
+{
+	color: #F9690E;
+	text-align: center;
+    text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 5px;
+}
+#navigationBar
+{
+	border-top: thick solid #F9690E;
+	border-bottom: thick solid #F9690E;
+	display: table;
+	text-align: center;
+	align-content: center;
+	font-size: 30px;
+	margin: auto;
+}
+#navigation 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.navigationList
+{
+	float: left;
+    text-align: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.nav
+{
+	color: white;
+	text-decoration: none;
+}
+.nav:hover
+{
+	color: #1f3d7a;
+	text-decoration: none;
+}
+#selected
+{
+	color:#F9690E;
+	text-decoration: none;
+}
+/* index */
+#BandImages
+{
+	padding: 30px;
+}
+#NewsHighlight
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 75%;
+	margin: auto;
+	overflow: hidden;
+	text-align: left;
+	color: white;
+	border-top: thick solid #F9690E;
+	border-bottom: thick solid #F9690E;
+	cursor: pointer;
+}
+#NewsHighlight img
+{
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+/* index & News */
+.NewsModal 
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+	top: 25%;
+	left: 25%;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: #1f3d7a;
+	border: thick solid #F9690E;
+}
+.NewsModalContent 
+{
+    color: white;
+	font-size: 18px;
+	margin: auto;
+    padding: 20px;
+    width: 80%;
+	position: relative;
+}
+.ModalClose 
+{
+    color: #F9690E;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+	text-decoration: none;
+    cursor: pointer;
+}
+/* index */
+#FeaturedMusic
+{
+	padding-top: 20px;
+	width: 90%;
+	margin: auto;
+	color: white;
+}
+#FeaturedMusic iframe
+{
+	vertical-align: middle;
+	border: none;
+}
+#FeaturedMusic img
+{
+	vertical-align: middle;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/* index & Music */
+#FeedTheMachineTracks
+{
+	width: 500px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.trackbar
+{ 
+	background:#1f3d7a; 
+	height:40px;
+	font-size: 16px;
+}
+.trackbar:nth-child(even) 
+{ 
+	background:#2a52a2;
+}
+.playbutton
+{
+	display:block; 
+	float:left; 
+	width:24px; 
+	height:24px; 
+	margin:10px 0px 0px 14px;
+	background:url('../Assets/Images/play_button.png') no-repeat; 
+	border:none; 
+	cursor:pointer; 
+	outline:none;
+}
+.trackname
+{ 
+	float:left; 
+	color:white; 
+	margin:12px 0px 0px 14px;
+}
+/* index */
+#FeaturedMusicButtons
+{
+	margin: auto;
+	width: 75%;
+	padding-top: 10px;
+	padding-left: 2%;
+}
+#VideosButtons
+{
+	width: 33%;
+	align-content: center;
+	display: inline;
+	float: left;
+}
+.VideosButton
+{
+	background-color: #F9690E;
+    border: none;
+    padding: 5px;
+	border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+	margin-right: 10px;
+}
+.VideosButton a
+{
+	color: white;
+	text-align: center;
+    text-decoration: none;
+	padding: 5px;
+}
+#AlbumButtons
+{
+	width: 33%;
+	align-content: center;
+	display: inline;
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+.AlbumButton
+{
+	background-color: #F9690E;
+    border: none;
+    padding: 5px;
+	border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+	margin-right: 10px;
+}
+.AlbumButton a
+{
+	color: white;
+	text-align: center;
+    text-decoration: none;
+	padding: 5px;
+}
+#MusicButtons
+{
+	width: 33%;
+	align-content: center;
+	display: inline;
+	float: right;
+}
+.MusicButton
+{
+	background-color: #F9690E;
+    border: none;
+    padding: 5px;
+	border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+	margin-right: 10px;
+}
+.MusicButton a
+{
+	color: white;
+	text-align: center;
+    text-decoration: none;
+	padding: 5px;
+}
+#footer
+{
+	padding: 50px;
+}
+/* Tours */
+#ToursTitle
+{
+	color:white;
+}
+#Tours
+{
+	border-collapse: collapse;
+	width: 70%;
+	margin: auto;
+	color: white;
+}
+#Tours td
+{
+	text-align: center;
+	padding: 10px;
+	border-bottom: 2px solid #F9690E;
+}
+.TicketsButton
+{
+	background-color: #F9690E;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 80%;
+}
+.TicketsButton a 
+{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+#MapTitle
+{
+	color: white;
+	text-align: left;
+	padding-left: 15%;
+}
+#map 
+{
+    margin: auto;
+	padding: 50px;
+	width: 70%;
+    height: 750px;
+    background-color: grey;
+}
+/* News */
+#NewsPage
+{
+	padding-top: 20px;
+	width: 90%;
+	margin: auto;
+	display: inline-block;
+}
+#NewsStory01
+{
+	width: 700px;
+	height: 800px;
+	color: white;
+	background-color: rgba(31, 61, 122, 0.3);
+	cursor: pointer;
+	float: left;
+	margin: auto;
+	display: inline-block;
+}
+#NewsStory02
+{
+	width: 700px;
+	height: 800px;
+	color: white;
+	background-color: rgba(31, 61, 122, 0.3);
+	cursor: pointer;
+	margin: auto;
+	display: inline-block;
+}
+#NewsStory03
+{
+	width: 700px;
+	height: 800px;
+	color: white;
+	background-color: rgba(31, 61, 122, 0.3);
+	cursor: pointer;
+	float: right;
+	margin: auto;
+	display: inline-block;
+}
+/* Music */
+.AlbumTitle
+{
+	color: white;
+	text-align: left;
+}
+
+#FeedTheMachineMusic
+{
+	width: 65%;
+	margin: auto;
+	border-bottom: 2px solid #F9690E;
+}
+#FeedTheMachineMusic img
+{
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+#FeedTheMachineTracks
+{
+	width: 500px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 30px;
+}
+.AlbumButtons
+{
+	float: right;
+	width: 250px;
+	padding-top: 50px;
+	vertical-align: middle;
+}
+.AlbumMusicButton
+{
+	background-color: #F9690E;
+    border: none;
+    padding: 10px;
+	border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+	margin-top: 20px;
+}
+.AlbumMusicButton a
+{
+	color: white;
+	text-align: center;
+    text-decoration: none;
+	padding: 5px;
+}
+#NoFixedAddressMusic
+{
+	width: 65%;
+	margin: auto;
+}
+/* Videos */
+#MusicVideos
+{
+	padding-top: 20px;
+	width: 100%;
+}
+#MusicVideos iframe
+{
+	border: none;
+}
+/* Gallery */	
+#Gallery
+{
+	padding-top: 20px;
+	width: 100%;
+}
+/* Demo */
+#DemoVideo
+{
+	border: none;
+	padding: 25px;
+}
+#ps
+{
+	color: white;
+}
+
+
+
+
